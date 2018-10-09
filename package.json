@@ -1,0 +1,26 @@
+{
+  "name": "liff-test-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/html/index.html",
+    "build": "parcel build ./src/html/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgen16go/liff-test-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgen16go/liff-test-app/issues"
+  },
+  "homepage": "https://github.com/jgen16go/liff-test-app#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel": "^1.10.2"
+  }
+}
