@@ -5,9 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LIFF TEST APP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul, li {
+      list-style: none;
+    }
+  </style>
 </head>
 <body>
   <h1>LIFF TEST APP</h1>
+  <ul>
+    <li><input id="js-name1" type="text" placeholder="姓（漢字）"></li>
+    <li><input id="js-name2" type="text" placeholder="名（漢字）"></li>
+    <li><input id="js-name-kana1" type="text" placeholder="せい（ひらがな）"></li>
+    <li><input id="js-name-kana2" type="text" placeholder="めい（ひらがな）"></li>
+    <li><input id="js-email" type="text" placeholder="メールアドレス"></li>
+    <li><input id="js-tel" type="text" placeholder="電話番号"></li>
+    <li><textarea id="js-ask" placeholder="全角（100文字）"></textarea></li>
+  </ul>
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="../js/index.js"></script>
 </body>
