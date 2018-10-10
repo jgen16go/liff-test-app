@@ -39,10 +39,17 @@ const setProfile = () => {
   })
 }
 
+const setCloseEvent = () => {
+  document.getElementById('js-close').addEventListener('click', () => {
+    liff.closeWindow()
+  })
+}
+
 window.addEventListener('load', async () => {
   logger('liff initial start')
   await initialize()
   logger('liff initial end')
   setLink()
   setProfile()
+  setCloseEvent()
 })
