@@ -30,7 +30,7 @@ const setLink = () => {
 }
 
 const setProfile = () => {
-  getProfile().then(res => {
+  liff.getProfile().then(res => {
     const { userId, displayName, pictureUrl, statusMessage } = res
     document.getElementById('js-p-id').innerHTML = userId
     document.getElementById('js-p-dispname').innerHTML = displayName
