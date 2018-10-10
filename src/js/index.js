@@ -45,6 +45,29 @@ const setCloseEvent = () => {
   })
 }
 
+const setMessageEvent = () => {
+  document.getElementById('js-message1').addEventListener('click', () => {
+    liff.sendMessage([
+      {
+        type: 'text',
+        text: 'hoge'
+      }
+    ])
+  })
+  document.getElementById('js-message2').addEventListener('click', () => {
+    liff.sendMessage([
+      {
+        type: 'text',
+        text: 'fuga'
+      },
+      {
+        type: 'text',
+        text: 'piyo'
+      }
+    ])
+  })
+}
+
 window.addEventListener('load', async () => {
   logger('liff initial start')
   await initialize()
@@ -52,4 +75,5 @@ window.addEventListener('load', async () => {
   setLink()
   setProfile()
   setCloseEvent()
+  setMessageEvent()
 })
