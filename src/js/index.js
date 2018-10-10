@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+
 const logs = []
 
 const logger = v => {
@@ -5,7 +7,7 @@ const logger = v => {
   document.getElementById('js-log').innerHTML = logs.join('<br>')
 }
 
-const initialize = () => {
+async function initialize() {
   return new Promise((resolve, reject) => {
     liff.init(
       resolve,
@@ -14,8 +16,8 @@ const initialize = () => {
   })
 }
 
-window.addEventListener('load', () => {
-  initialize().then(res => {
-    logger('init success')
-  })
+window.addEventListener('load', async () => {
+  logger('liff initial start')
+  await initialize()
+  logger('liff initial end')
 })
