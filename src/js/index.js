@@ -47,7 +47,7 @@ const setCloseEvent = () => {
 
 const setMessageEvent = () => {
   document.getElementById('js-message1').addEventListener('click', () => {
-    liff.sendMessage([
+    liff.sendMessages([
       {
         type: 'text',
         text: 'hoge'
@@ -55,7 +55,7 @@ const setMessageEvent = () => {
     ])
   })
   document.getElementById('js-message2').addEventListener('click', () => {
-    liff.sendMessage([
+    liff.sendMessages([
       {
         type: 'text',
         text: 'fuga'
