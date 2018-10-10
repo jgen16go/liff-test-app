@@ -29,9 +29,20 @@ const setLink = () => {
   })
 }
 
+const setProfile = () => {
+  getProfile().then(res => {
+    const { userId, displayName, pictureUrl, statusMessage } = res
+    document.getElementById('js-p-id').innerHTML = userId
+    document.getElementById('js-p-dispname').innerHTML = displayName
+    document.getElementById('js-p-pictureUrl').innerHTML = pictureUrl
+    document.getElementById('js-p-statusMsg').innerHTML = statusMessage
+  })
+}
+
 window.addEventListener('load', async () => {
   logger('liff initial start')
   await initialize()
   logger('liff initial end')
   setLink()
+  setProfile()
 })
