@@ -5,9 +5,17 @@ const logger = v => {
   document.getElementById('js-log').innerHTML = logs.join('<br>')
 }
 
+const initialize = () => {
+  return new Promise((resolve, reject) => {
+    liff.init(
+      resolve,
+      reject
+    )
+  })
+}
+
 window.addEventListener('load', () => {
-  liff.init(
-    () => logger('init success'),
-    () => logger('init error'),
-  )
+  initialize().then(res => {
+    logger('init success')
+  })
 })
