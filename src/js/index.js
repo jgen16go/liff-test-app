@@ -77,3 +77,11 @@ window.addEventListener('load', async () => {
   setCloseEvent()
   setMessageEvent()
 })
+
+
+
+const tel = document.getElementById('js-tel')
+tel.addEventListener('blur', (e) => {
+  const val = e.target.value
+  e.target.value = val.replace(/[^0-9]/g, '');
+})
