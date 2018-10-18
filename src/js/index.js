@@ -78,10 +78,15 @@ window.addEventListener('load', async () => {
   setMessageEvent()
 })
 
+const regexpPattern = {
+  numericOnly: new RegExp('[^0-9]')
+}
 
+const isNumericOnly = s => s.match(regexpPattern.numberOnly)
+const deleteNonNumericCharacters = s => s.replace(regexpPattern.numberOnly, '')
 
 const tel = document.getElementById('js-tel')
 tel.addEventListener('blur', (e) => {
   const val = e.target.value
-  e.target.value = val.replace(/[^0-9]/g, '');
+  e.target.value = deleteNonNumericCharacters(val)
 })
