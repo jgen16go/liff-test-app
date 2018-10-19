@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel ./src/html/index.html",
     "build": "parcel build ./src/html/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,22 @@
   },
   "homepage": "https://github.com/jgen16go/liff-test-app#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "parcel-bundler": "^1.10.2"
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "parcel-bundler": "^1.10.2",
+    "regenerator-runtime": "^0.12.1"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
-    "lodash": "^4.17.11"
+    "lodash-es": "^4.17.11"
+  },
+  "jest": {
+    "notify": true,
+    "testRegex": "src/.+\\.test\\.js$",
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage"
   }
 }
