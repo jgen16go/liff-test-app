@@ -1,0 +1,12 @@
+.c-grid {
+  display: flex;
+  justify-content: space-between;
+
+  &--single {
+    width: 100%;
+  }
+
+  &--2col {
+    width: 49%;
+  }
+}

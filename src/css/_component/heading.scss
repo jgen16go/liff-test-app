@@ -1,0 +1,8 @@
+.c-heading {
+  font-weight: bold;
+  display: flex;
+  &.-form-heading {
+    margin-bottom: 8px;
+    color: #212121;
+  }
+}
