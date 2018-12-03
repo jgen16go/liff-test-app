@@ -86,7 +86,7 @@ const setMessageEvent = () => {
               {
                 "type": "uri",
                 "label": "View detail3",
-                "uri": "http://example.com/page/123"
+                "uri": "line://msg/text/?hoge¥nfuga"
               }
             ]
         }
