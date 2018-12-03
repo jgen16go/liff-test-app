@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LIFF TEST APP</title>
+  <link rel="stylesheet" href="../css/index.scss">
+</head>
+<body>
+  <div class="l-content">
+    <div class="p-form-group">
+      <div class="c-heading -form-heading">
+        <h2>予約者名</h2><span class="c-badge -require">必須</span>
+      </div>
+      <div class="c-grid u-mb8">
+        <div class="c-grid--2col">
+          <input class="js-validate-target-name c-input-text" placeholder="姓（漢字）">
+        </div>
+        <div class="c-grid--2col">
+          <input class="js-validate-target-name c-input-text" placeholder="名（漢字）">
+        </div>
+      </div>
+      <div class="c-grid">
+        <div class="c-grid--2col">
+          <input class="js-validate-target-name-kana c-input-text" placeholder="せい（ひらがな）">
+        </div>
+        <div class="c-grid--2col">
+          <input class="js-validate-target-name-kana c-input-text" placeholder="めい（ひらがな）">
+        </div>
+      </div>
+    </div>
+    <div class="p-form-group">
+      <div class="c-heading -form-heading">
+        <h2>メールアドレス</h2><span class="c-badge -require">必須</span>
+      </div>
+      <div class="c-grid">
+        <div class="c-grid--single">
+          <input class="js-validate-target-email c-input-text" placeholder="gnavi@email.com">
+        </div>
+      </div>
+    </div>
+    <div class="p-form-group">
+      <div class="c-heading -form-heading">
+        <h2>電話番号</h2><span class="c-badge -require">必須</span>
+      </div>
+      <div class="c-grid">
+        <div class="c-grid--single">
+          <input class="js-validate-target-tel c-input-text" placeholder="09012345678">
+        </div>
+      </div>
+    </div>
+    <div class="p-form-group">
+      <div class="c-heading -form-heading">
+        <h2>おおおおお</h2>
+      </div>
+      <div class="c-grid">
+        <div class="c-grid--single">
+          <textarea class="js-validate-target-ask c-input-textarea" placeholder="fuga"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-footer -submit">
+    <div class="p-consent">
+      <p class="c-text-weak">ご利用に際し、<a href="#" target="_blank">あああああ</a>、<a href="#" target="_blank">いいいい</a>および<a href="#">うううう</a>の3点に関して同意するものとします。</p>
+    </div>
+    <button class="c-button -submit">利用規約に同意の上、送信する</button>
+  </div>
+
+  <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+  <script src="../js/index.js"></script>
+</body>
+</html>
