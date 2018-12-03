@@ -66,7 +66,7 @@ const setMessageEvent = () => {
             "imageSize": "cover",
             "imageBackgroundColor": "#FFFFFF",
             "title": "Menu",
-            "text": "Please select<br>aaaaa\n",
+            "text": "Please select<br>aaaaa\nbbbbbb",
             "defaultAction": {
                 "type": "uri",
                 "label": "View detail",
