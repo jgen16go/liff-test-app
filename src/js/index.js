@@ -61,17 +61,8 @@ const setMessageEvent = () => {
         "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
-            "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-            "imageAspectRatio": "rectangle",
-            "imageSize": "cover",
-            "imageBackgroundColor": "#FFFFFF",
             "title": "Menu",
-            "text": "Please select<br>aaaaa\nbbbbbb",
-            "defaultAction": {
-                "type": "uri",
-                "label": "View detail",
-                "uri": "http://example.com/page/123"
-            },
+            "text": "Please select\nbbbbbb",
             "actions": [
               {
                 "type": "uri",
