@@ -97,7 +97,8 @@ const setMessageEvent = () => {
 
 window.addEventListener('load', async () => {
   logger('liff initial start')
-  await initialize()
+  const initialData = await initialize()
+  logger(`uid: ${initialData.context.userId}`)
   logger('liff initial end')
   setLink()
   setProfile()
