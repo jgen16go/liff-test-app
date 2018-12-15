@@ -58,6 +58,7 @@ const setMessageEvent = () => {
     liff.sendMessages([
       {
         "type": "template",
+        "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
             "title": "Menu",
