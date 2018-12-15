@@ -55,7 +55,7 @@ const setMessageEvent = () => {
     ])
   })
   document.getElementById('js-message2').addEventListener('click', () => {
-    liff.sendMessage(
+    liff.sendMessages([
       {
         "type": "template",
         "template": {
@@ -81,7 +81,7 @@ const setMessageEvent = () => {
             ]
         }
       }
-    )
+    ])
   })
 }
 
