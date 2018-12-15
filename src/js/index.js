@@ -55,10 +55,9 @@ const setMessageEvent = () => {
     ])
   })
   document.getElementById('js-message2').addEventListener('click', () => {
-    liff.sendMessages([
+    liff.sendMessage(
       {
         "type": "template",
-        "altText": "This is a buttons template",
         "template": {
             "type": "buttons",
             "title": "Menu",
@@ -82,7 +81,7 @@ const setMessageEvent = () => {
             ]
         }
       }
-    ])
+    )
   })
 }
 
