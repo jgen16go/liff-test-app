@@ -55,6 +55,7 @@ const setMessageEvent = () => {
     ])
   })
   document.getElementById('js-message2').addEventListener('click', () => {
+    const txt = '◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm%0A[人数]\n$人数 人\n[地図]\nhttps://www.google.com/maps?q=35.6694219,139.4612045'
     liff.sendMessages([
       {
         "type": "template",
@@ -77,7 +78,7 @@ const setMessageEvent = () => {
               {
                 "type": "uri",
                 "label": "友だちとシェアする",
-                "uri": "line://msg/text/?◆お申込み内容%0A[店名]%0Aああああああ%0A[日付]%0Amm月dd日（$曜日）%0A[時間]%0Ahh:mm%0A[人数]%0A$人数 人%0A[地図]%0A"
+                "uri": "line://msg/text/?" + encodeURIComponent(txt)
               }
             ]
         }
