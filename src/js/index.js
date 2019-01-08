@@ -62,22 +62,22 @@ const setMessageEvent = () => {
         "template": {
             "type": "buttons",
             "title": "Menu",
-            "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。",
+            "text": "Please select\nbbbbbb",
             "actions": [
               {
                 "type": "uri",
-                "label": "ご予約内容詳細",
+                "label": "View detail1",
                 "uri": "http://example.com/page/123"
               },
               {
                 "type": "uri",
-                "label": "地図を開く",
-                "uri": "https://www.google.com/maps?q=35.6694219,139.4612045"
+                "label": "View detail2",
+                "uri": "http://example.com/page/123"
               },
               {
                 "type": "uri",
-                "label": "友だちとシェアする",
-                "uri": "line://msg/text/?◆お申込み内容%0A[店名]%0Aああああああ%0A[日付]%0Amm月dd日（$曜日）%0A[時間]%0Ahh:mm%0A[人数]%0A$人数 人%0A[地図]%0Ahttps://www.google.com/maps?q=35.6694219,139.4612045"
+                "label": "View detail3",
+                "uri": "line://msg/text/?hoge%0Afuga"
               }
             ]
         }
