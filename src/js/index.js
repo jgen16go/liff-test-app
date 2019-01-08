@@ -77,7 +77,7 @@ const setMessageEvent = () => {
               {
                 "type": "uri",
                 "label": "友だちとシェアする",
-                "uri": "https://line.me/R/msg/text/?◆お申込み内容%0A[店名]%0Aああああああ%0A[日付]%0Amm月dd日（$曜日）%0A[時間]%0Ahh:mm%0A[人数]%0A$人数 人%0A[地図]%0Ahttps://www.google.com/maps?q=35.6694219,139.4612045"
+                "uri": "line://msg/text/?◆お申込み内容%0A[店名]%0Aああああああ%0A[日付]%0Amm月dd日（$曜日）%0A[時間]%0Ahh:mm%0A[人数]%0A$人数 人%0A[地図]%0A"
               }
             ]
         }
