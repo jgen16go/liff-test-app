@@ -58,18 +58,52 @@ const setMessageEvent = () => {
     const txt = '◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人\n[地図]\nhttps://www.google.com/maps?q=35.6694219,139.4612045'
     liff.sendMessages([
       {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "spacing": "sm",
-          "contents": [
-            {
-              "type": "text",
-              "wrap": true,
-              "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人"
-            }
-          ]
+        "type": "flex",
+        "altText": "this is a flex message",
+        "contents": {
+          "type": "bubble",
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "wrap": true,
+                "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人"
+              },
+              {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "ご予約内容詳細",
+                  "uri": "https://example.com"
+                }
+              },
+              {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "地図を開く",
+                  "uri": "https://www.google.com/maps?q=35.6694219,139.4612045"
+                }
+              },
+              {
+                "type": "button",
+                "style": "link",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "友だちとシェアする",
+                  "uri": "line://msg/text/?"
+                }
+              }
+            ]
+          }
         }
       }
     ])
