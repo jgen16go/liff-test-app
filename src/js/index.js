@@ -56,33 +56,50 @@ const setMessageEvent = () => {
   })
   document.getElementById('js-message2').addEventListener('click', () => {
     const txt = '◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人\n[地図]\nhttps://www.google.com/maps?q=35.6694219,139.4612045'
-    // const txt2 = '※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人'
-    const txt2 = 'hoge\nfuga'
     liff.sendMessages([
       {
-        "type": "template",
-        "altText": "This is a buttons template",
-        "template": {
-            "type": "buttons",
-            "title": "Menu",
-            "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\nお申込み内容\n",
-            "actions": [
-              {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "text",
+              "wrap": true,
+              "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人"
+            },
+            {
+              "type": "button",
+              "style": "link",
+              "height": "sm",
+              "action": {
                 "type": "uri",
                 "label": "ご予約内容詳細",
-                "uri": "http://example.com/page/123"
-              },
-              {
+                "uri": "https://example.com"
+              }
+            },
+            {
+              "type": "button",
+              "style": "link",
+              "height": "sm",
+              "action": {
                 "type": "uri",
                 "label": "地図を開く",
                 "uri": "https://www.google.com/maps?q=35.6694219,139.4612045"
-              },
-              {
+              }
+            },
+            {
+              "type": "button",
+              "style": "link",
+              "height": "sm",
+              "action": {
                 "type": "uri",
                 "label": "友だちとシェアする",
                 "uri": "line://msg/text/?" + encodeURIComponent(txt)
               }
-            ]
+            }
+          ]
         }
       }
     ])
