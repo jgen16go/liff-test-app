@@ -56,7 +56,8 @@ const setMessageEvent = () => {
   })
   document.getElementById('js-message2').addEventListener('click', () => {
     const txt = '◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人\n[地図]\nhttps://www.google.com/maps?q=35.6694219,139.4612045'
-    const txt2 = '※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人'
+    // const txt2 = '※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人'
+    const txt2 = 'いいいい\nああああ'
     liff.sendMessages([
       {
         "type": "template",
