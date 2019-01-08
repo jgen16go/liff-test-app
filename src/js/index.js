@@ -62,7 +62,7 @@ const setMessageEvent = () => {
         "template": {
             "type": "buttons",
             "title": "Menu",
-            "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n\n◆お申込み内容\n[店名]\nああああああ\n[日付]\nmm月dd日（$曜日）\n[時間]\nhh:mm\n[人数]\n$人数 人",
+            "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。",
             "actions": [
               {
                 "type": "uri",
@@ -77,7 +77,7 @@ const setMessageEvent = () => {
               {
                 "type": "uri",
                 "label": "友だちとシェアする",
-                "uri": "line://msg/text/?"
+                "uri": "line://msg/text/?◆お申込み内容%0A[店名]%0Aああああああ%0A[日付]%0Amm月dd日（$曜日）%0A[時間]%0Ahh:mm%0A[人数]%0A$人数 人%0A[地図]%0Ahttps://www.google.com/maps?q=35.6694219,139.4612045"
               }
             ]
         }
