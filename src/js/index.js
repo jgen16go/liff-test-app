@@ -65,7 +65,7 @@ const setMessageEvent = () => {
         "template": {
             "type": "buttons",
             "title": "Menu",
-            "text": encodeURIComponent(txt2),
+            "text": "※別途送信のメール本文に記載されたリンクをクリックした後、予約が確定します。\n◆お申込み内容\n",
             "actions": [
               {
                 "type": "uri",
