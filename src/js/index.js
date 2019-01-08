@@ -66,13 +66,13 @@ const setMessageEvent = () => {
             "actions": [
               {
                 "type": "uri",
-                "label": "View detail1",
+                "label": "ご予約内容詳細",
                 "uri": "http://example.com/page/123"
               },
               {
                 "type": "uri",
-                "label": "View detail2",
-                "uri": "http://example.com/page/123"
+                "label": "地図を開く",
+                "uri": "https://www.google.com/maps?q=35.6694219,139.4612045"
               },
               {
                 "type": "uri",
