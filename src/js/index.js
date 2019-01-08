@@ -99,7 +99,7 @@ const setMessageEvent = () => {
                 "action": {
                   "type": "uri",
                   "label": "友だちとシェアする",
-                  "uri": "line://msg/text/?"
+                  "uri": "line://msg/text/?" + encodeURIComponent(txt)
                 }
               }
             ]
