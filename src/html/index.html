@@ -16,6 +16,7 @@
   </style>
 </head>
 <body>
+  <div id="js-ua"></div>
   <h1>LIFF TEST APP</h1>
   <div id="js-log"></div>
   <h2>getProfile</h2>
@@ -47,6 +48,11 @@
     <li><input id="js-tel" type="tel" placeholder="電話番号" pattern="^[0-9]+$"></li>
     <li><textarea id="js-ask" placeholder="全角（100文字）"></textarea></li>
   </ul>
+
+  <script>
+    var dom = document.getElementById('js-ua')
+    dom.innerHTML = window.navigator.userAgent;
+  </script>
 
   <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
   <script src="../js/index.js"></script>
